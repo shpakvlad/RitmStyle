@@ -1,0 +1,61 @@
+/*
+.##.....##.########....###....########..########.########.
+.##.....##.##.........##.##...##.....##.##.......##.....##
+.##.....##.##........##...##..##.....##.##.......##.....##
+.#########.######...##.....##.##.....##.######...########.
+.##.....##.##.......#########.##.....##.##.......##...##..
+.##.....##.##.......##.....##.##.....##.##.......##....##.
+.##.....##.########.##.....##.########..########.##.....##
+*/
+
+.header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+footer .container {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/*
+.##....##.########.##......##..######.
+.###...##.##.......##..##..##.##....##
+.####..##.##.......##..##..##.##......
+.##.##.##.######...##..##..##..######.
+.##..####.##.......##..##..##.......##
+.##...###.##.......##..##..##.##....##
+.##....##.########..###..###...######.
+*/
+.news-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 416px);
+  grid-template-rows: repeat(2, 258px);
+  gap: 24px;
+}
+
+.news-card {
+  background-image: url("../img/bg/card-small.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.news-card::before {
+  content: attr(data-date);
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  padding: 6px 12px 5px;
+  font: 0.882rem/18.9px "Montserrat-regular";
+  color: var(--caption-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.news-card a {
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+  color: #fff;
+  font: 1.133rem/29.4px "ElMessiri-bold";
+  text-decoration: none;
+}

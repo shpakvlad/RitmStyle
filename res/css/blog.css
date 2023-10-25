@@ -1,0 +1,54 @@
+.blog_post img {
+  width: 564px;
+  height: 430px;
+  overflow: scroll;
+  display: inline-block;
+}
+
+.blog-post {
+  display: flex;
+  align-items: start;
+  padding: 50px 60px;
+  border: 2px solid var(--accent-color);
+  border-radius: 20px;
+  gap: 50px;
+}
+
+.blog-post .blog-details {
+  max-width: 564px;
+}
+
+.blog-post img {
+  max-width: 100%;
+}
+
+.blog-post .blog-details p:first-of-type {
+  padding: 6px 12px 5px;
+  margin: 0;
+  font: 0.882rem/18.9px "Montserrat-regular";
+  color: var(--caption-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.blog-post .blog-details h5 {
+    margin-top: 45px;
+    font: 1.512rem/33.6px "ElMessiri-Bold";
+    color: var(--caption-color);
+}
+
+.blog-post .blog-details p {
+    margin-top: 30px;
+    font: 1rem/22.4px "Montserrat-regular";
+}
+
+.blog-post .blog-details button {
+    margin-top: 40px;
+    background-color: var(--accent-color);
+    color:var(--caption-color);
+}
+
+.blog-post:not(:first-of-type) {
+    margin-top: 45px;
+}

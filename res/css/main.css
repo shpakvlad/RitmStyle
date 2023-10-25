@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  /* padding: 75px 0; */
+  padding: 60px 0 120px 0;
+
+  background-color: var(--bg-color);
+}
+
+h1 {
+  width: 100%;
+  font: 4.032rem/89.6px "ElMessiri-bold";
+  color: var(--caption-color);
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  padding: 0 0 60px 0;
+  font: 2.646rem/58.8px "ElMessiri-Bold";
+  color: var(--caption-color);
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: url("../img/icons/leaf-left.png");
+    position: relative;
+    top: -6px;
+    left: -45px;
+  }
+
+  &::after {
+    content: url("../img/icons/leaf-right.png");
+    position: relative;
+    top: -6px;
+    left: 45px;
+  }
+}
+
+h3,
+h4 {
+  width: 100%;
+  font: 1.512rem/33.6px "Montserrat-extrabold";
+  color: var(--caption-color);
+}
+
+h3 ~ p {
+  margin-top: 30px;
+  max-width: 466px;
+  font: 1rem/22.4px "ElMessiri-Bold";
+  color: var(--caption-color);
+}
+
+h4 ~ p {
+  font: 0.882rem/22.4px "Montserrat-light";
+  color: var(--caption-color);
+}
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  width: 100%;
+  font: 1.512rem/28px "Montserrat-extrabold";
+  color: var(--caption-color);
+}
+
+h5 ~ p {
+  margin-top: 20px;
+  width: 100%;
+  font: 0.882rem/19.6px "Montserrat-light";
+  color: var(--caption-color);
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.container-small {
+  max-width: 1076px;
+  margin: 0 auto;
+}
+
+header,
+section,
+footer {
+  background-color: var(--bg-color);
+}
+
+button {
+  padding: 9px 15px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+/*
+.##.....##.########....###....########..########.########.
+.##.....##.##.........##.##...##.....##.##.......##.....##
+.##.....##.##........##...##..##.....##.##.......##.....##
+.#########.######...##.....##.##.....##.######...########.
+.##.....##.##.......#########.##.....##.##.......##...##..
+.##.....##.##.......##.....##.##.....##.##.......##....##.
+.##.....##.########.##.....##.########..########.##.....##
+*/
+.header {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav {
+  display: flex;
+  gap: 50px;
+}
+
+.header nav a {
+  font: 0.882rem/18.9px "Montserrat-regular";
+  color: var(--caption-color);
+  text-decoration: none;
+}
+
+.header button {
+  background-color: var(--accent-color);
+  color: var(--caption-color);
+}
+
+/*
+.##.....##.########.########...#######.
+.##.....##.##.......##.....##.##.....##
+.##.....##.##.......##.....##.##.....##
+.#########.######...########..##.....##
+.##.....##.##.......##...##...##.....##
+.##.....##.##.......##....##..##.....##
+.##.....##.########.##.....##..#######.
+*/
+.hero {
+  padding: 20px 0 75px 0;
+  position: relative;
+  /* background-image: url("../img/bg/hero-bg.png"); */
+}
+
+.hero img {
+  width: 100%;
+  object-position: left;
+  object-fit: contain;
+}
+
+.hero h4 {
+  position: absolute;
+  top: 136px;
+  left: 0;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 210px;
+  left: 0;
+}
+
+/*
+..######..########....###....##....##..######..########
+.##....##.##.........##.##...###...##.##....##.##......
+.##.......##........##...##..####..##.##.......##......
+..######..######...##.....##.##.##.##.##.......######..
+.......##.##.......#########.##..####.##.......##......
+.##....##.##.......##.....##.##...###.##....##.##......
+..######..########.##.....##.##....##..######..########
+*/
+.seance-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 416px);
+  grid-template-rows: repeat(2, 258px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.seance-card {
+  position: relative;
+}
+
+.seance-card h6 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  font: 1.512rem/33.6px "ElMessiri-Bold";
+  color: var(--caption-color);
+}
+
+.card-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  position: relative;
+}
+
+.card-1 h6 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  font: 1.512rem/33.6px "ElMessiri-Bold";
+  color: var(--caption-color);
+}
+
+.card-1::after {
+  content: "";
+  width: 100%;
+  height: 7px;
+  position: absolute;
+  bottom: 7px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: block;
+  background-color: var(--accent-color);
+}
+
+.card-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.card-3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.card-4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.card-5 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/*
+.########.########.########.########..########.....###.....######..##....##
+.##.......##.......##.......##.....##.##.....##...##.##...##....##.##...##.
+.##.......##.......##.......##.....##.##.....##..##...##..##.......##..##..
+.######...######...######...##.....##.########..##.....##.##.......#####...
+.##.......##.......##.......##.....##.##.....##.#########.##.......##..##..
+.##.......##.......##.......##.....##.##.....##.##.....##.##....##.##...##.
+.##.......########.########.########..########..##.....##..######..##....##
+*/
+.feedback-slider {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.slider-1,
+.slider-3 {
+  width: 500px;
+  margin: 50px;
+  padding: 45px 40px;
+  background-color: var(--slider-second-color);
+  border-radius: 10px;
+}
+
+.slider-2 {
+  width: 636px;
+  padding: 50px 60px;
+  display: flex;
+  flex-flow: column;
+  background-color: var(--accent-color);
+  border-radius: 10px;
+}
+
+.slider-1 p,
+.slider-1 h5,
+.slider-3 p,
+.slider-3 h5 {
+  font-size: 70%;
+  color: rgb(168, 168, 168);
+}
+
+.pager {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*
+....###....########...#######..##.....##.########
+...##.##...##.....##.##.....##.##.....##....##...
+..##...##..##.....##.##.....##.##.....##....##...
+.##.....##.########..##.....##.##.....##....##...
+.#########.##.....##.##.....##.##.....##....##...
+.##.....##.##.....##.##.....##.##.....##....##...
+.##.....##.########...#######...#######.....##...
+*/
+.about-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 85px;
+}
+
+.about-text p:first-of-type {
+  margin-top: 30px;
+}
+
+.about-text h4 {
+  text-align: left;
+}
+
+.about-card:nth-child(odd) {
+  margin-top: 30px;
+  flex-flow: row-reverse;
+}
+
+/*
+.########..########..####..######..########
+.##.....##.##.....##..##..##....##.##......
+.##.....##.##.....##..##..##.......##......
+.########..########...##..##.......######..
+.##........##...##....##..##.......##......
+.##........##....##...##..##....##.##......
+.##........##.....##.####..######..########
+*/
+
+.price-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-details ul li {
+  width: 400px;
+  margin-top: 31px;
+  padding-left: 20px;
+  font: 1.134rem/25.2px "Montserrat-regular";
+  color: var(--caption-color);
+  position: relative;
+}
+
+.price-details ul li:first-of-type {
+  margin-top: 0;
+}
+
+.price-details ul li span {
+  margin-left: auto;
+  font: 1.134rem/25.2px "ElMessiri-Bold";
+  position: absolute;
+  top: 4px;
+  right: 0;
+}
+
+.price-details ul li::marker {
+  content: url("../img/icons/leaf-left.png");
+}
+
+.price-certificate p {
+  margin-top: 30px;
+  font: 1.323rem/29.4px "ElMessiri-Bold";
+  color: var(--caption-color);
+  text-align: center;
+}
+
+/*
+.########..#######...#######..########.########.########.
+.##.......##.....##.##.....##....##....##.......##.....##
+.##.......##.....##.##.....##....##....##.......##.....##
+.######...##.....##.##.....##....##....######...########.
+.##.......##.....##.##.....##....##....##.......##...##..
+.##.......##.....##.##.....##....##....##.......##....##.
+.##........#######...#######.....##....########.##.....##
+*/
+footer .container {
+  padding: 30px 0;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .container p {
+  font: 0.882rem/18.9px "Montserrat-regular";
+  color: var(--caption-color);
+}
+
+footer .container p:last-of-type {
+  font: 0.882rem/18.9px "Montserrat-bold";
+}

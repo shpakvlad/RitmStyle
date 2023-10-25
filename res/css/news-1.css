@@ -1,0 +1,30 @@
+.news-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-detail {
+    max-width: 526px;
+}
+
+.news-detail p:first-of-type {
+    padding: 6px 12px 5px;
+    margin: 0;
+    font: 0.882rem/18.9px "Montserrat-regular";
+    color: var(--caption-color);
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.news-detail h5 {
+    margin-top: 45px;
+    font: 1.512rem/33.6px "ElMessiri-Bold";
+    color: var(--caption-color);
+}
+
+.news-detail p {
+    margin-top: 30px;
+    font: 1rem/22.4px "Montserrat-regular";
+}
